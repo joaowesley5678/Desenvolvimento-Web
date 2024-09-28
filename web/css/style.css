@@ -1,0 +1,104 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #ffff !important;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  background-color: #bdac7f;
+  font-size: 1rem;
+  z-index: 99999;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #bdac7f
+}
+
+.dropdown-menu {
+  position: absolute;
+  box-shadow: 0 0 2px black;
+  display: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+}
+
+header {
+  background-color: transparent;
+  color: #fff;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+section {
+  margin: 0;
+}
+
+p {
+  font-size: 2em;
+}
+
+ul {
+  font-size: 2em;
+}
+
+#produtos {
+  background-color: transparent;
+}
+
+#lancamentos {
+  background-color: transparent;
+  padding: 0;
+}
+
+#lancamentos .container {
+  padding: 0;
+  width: 100%;
+}
+
+#produtos .container {
+  padding: 0;
+  width: 100%;
+}
+
+#sobre-nos {
+  background-color: #bdac7f;
+}
+
+footer {
+  background-color: #bdac7f;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #ffffff;
+}
