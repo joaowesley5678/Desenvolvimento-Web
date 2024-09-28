@@ -1,5 +1,5 @@
 * {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -8,7 +8,7 @@ body {
   background-color: #ffff !important;
 }
 
-nav {
+/* nav {
   width: 100%;
   position: fixed;
   background-color: #bdac7f;
@@ -28,7 +28,7 @@ nav li a {
 
 nav li a:hover {
   background-color: #bdac7f
-}
+} */
 
 .dropdown-menu {
   position: absolute;
@@ -44,12 +44,11 @@ nav li a:hover {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-}
 
-nav a {
+/* nav a {
   color: #fff;
-  font-weight: bold;
-}
+  /* font-weight: bold;
+} */
 
 header {
   background-color: transparent;
@@ -63,11 +62,11 @@ section {
 }
 
 p {
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
 ul {
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
 #produtos {
