@@ -8,6 +8,10 @@ body {
   background-color: #ffff !important;
 }
 
+#cabecalho {
+  background-color: #bdac7f;
+}
+
 /* nav {
   width: 100%;
   position: fixed;
