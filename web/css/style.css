@@ -11,6 +11,14 @@ body {
 #cabecalho {
   background-color: #bdac7f;
 }
+#busca {
+  width: 600px;
+}
+
+#sacola {
+  padding: 8px;
+  padding-top: 6px;
+}
 
 /* nav {
   width: 100%;

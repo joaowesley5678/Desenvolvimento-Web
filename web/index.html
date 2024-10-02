@@ -23,8 +23,8 @@
   <nav class="navbar fixed-top" id="cabecalho">
     <div class="container-fluid">
       <div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <img src="images/menu.png" alt="">
         </button>
         <a class="navbar-brand" href="#"><img src="images/casssaco.jpg" alt="CASSACO?" style="width:50px;height:40px;"></a>
       </div>
@@ -57,10 +57,18 @@
         </div>
       </div>
         <div class="justify-content-center">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn" type="submit">Buscar</button>
+          <form class="d-flex bg-white rounded-pill" id="busca" role="search">
+            <input class="form-control border-0 rounded-start-pill bg-transparent" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-light border-0 rounded-end-pill" type="submit"><img src="images/lupa.png" alt="Buscar" style="width: 1.5rem;"></button>
           </form>
+        </div>
+        <div>
+          <a href="#" class="btn border-0 rounded-circle" id="sacola">
+            <img src="images/sacola-de-compras.png" alt="Sacola">
+          </a>
+          <a href="#">
+            <img src="images/login.png" alt="Login">
+          </a>
         </div>
     </div>
   </nav>
