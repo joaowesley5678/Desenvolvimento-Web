@@ -2,46 +2,46 @@ import { useEffect, useState } from 'react'
 import { alunos } from './data'
 
 function App() {
-	const [data, setData] = useState([])
+	const [isOpen, setIsOpen] = useState(false);
 
-	useEffect(() => {
-		setData(alunos)
-	}, [])
+	const toggleMenu = () => {
+		setIsOpen(!isOpen);
+	};
 
 	return (
-		<main className='p-4'>
-			<h1 className=''>Lista de alunos</h1>
-
-			<input
-				className='p-2 border border-gray-300 rounded-lg m-1'
-				type='search'
-				placeholder='filtre seus dados aqui'
-				onChange={({ target: { value } }) => {
-					value ? setData(alunos.filter((m) => m.nome.includes(value))) : setData(alunos)
-				}}
-			/>
-
-			<table className='border border-gray-600 w-full my-4'>
-				<thead>
-					<tr className='border border-gray-600'>
-						<th>Nome</th>
-						<th>AV1</th>
-						<th>AV2</th>
-						<th>AV3</th>
-					</tr>
-				</thead>
-				<tbody>
-					{data.map((el, ix) => (
-						<tr key={ix} className='border border-gray-600'>
-							<td>{el.nome}</td>
-							<td className='text-center'>{el.av1.toFixed(1)}</td>
-							<td className='text-center'>{el.av2.toFixed(1)}</td>
-							<td className='text-center'>{el.av3.toFixed(1)}</td>
-						</tr>
-					))}
-				</tbody>
-			</table>
-		</main>
+	    <nav className="bg-[#bdac7f]" id="cabecalho">
+            <div className="flex">
+                <div className="flex">
+                    <button onClick={toggleMenu} type="button">
+                        <img src="" alt="menu"/>
+                    </button>
+                    {isOpen && (
+                        <ul>
+                          <li><a href="#">Categoria 1</a></li>
+                          <li><a href="#">Categoria 2</a></li>
+                          <li><a href="#">Categoria 3</a></li>
+                          <li><a href="#">Categoria 4</a></li>
+                          <li><a href="#">Categoria 5</a></li>
+                        </ul>
+					)}
+                </div>
+					<a href="#"><img src="" alt="logo"/></a>
+              <div className="flex grow">
+                <form>
+                  <input/>
+                  <button><img alt="lupa"/></button>
+                </form>
+              </div>
+              <div className="flex grow-0">
+                <a href="#">
+                  <img alt="sacola"/>
+                </a>
+                <a href="#">
+                  <img alt="login"/>
+                    </a>
+                </div>
+            </div>
+        </nav>
 	)
 }
 
